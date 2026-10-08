@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AcxiomCRM - Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <h2>AcxiomCRM</h2>
+
+    <nav>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#customers">Customers</a>
+        <a href="#leads">Leads</a>
+        <a href="#opportunities">Opportunities</a>
+        <a href="#followups">Follow-Ups</a>
+        <button onclick="logout()">Logout</button>
+    </nav>
+</header>
+
+<main>
+
+    <section id="dashboard">
+        <h1>Dashboard</h1>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Total Customers</h3>
+                <h2 id="customerCount">3</h2>
+            </div>
+
+            <div class="card">
+                <h3>Total Leads</h3>
+                <h2 id="leadCount">3</h2>
+            </div>
+
+            <div class="card">
+                <h3>Open Opportunities</h3>
+                <h2>2</h2>
+            </div>
+
+            <div class="card">
+                <h3>Pipeline Value</h3>
+                <h2>₹8,50,000</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="customers">
+        <h2>Customer Management</h2>
+
+        <input id="customerName" placeholder="Customer Name">
+        <input id="customerEmail" placeholder="Email">
+        <button onclick="addCustomer()">Add Customer</button>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody id="customerTable">
+                <tr>
+                    <td>Rahul Kumar</td>
+                    <td>rahul@gmail.com</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Priya Sharma</td>
+                    <td>priya@gmail.com</td>
+                    <td>Active</td>
+                </tr>
+
+                <tr>
+                    <td>Arun Rao</td>
+                    <td>arun@gmail.com</td>
+                    <td>Inactive</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="leads">
+        <h2>Lead Management</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Lead</th>
+                    <th>Company</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Vikram</td>
+                    <td>ABC Technologies</td>
+                    <td>New</td>
+                </tr>
+
+                <tr>
+                    <td>Neha</td>
+                    <td>XYZ Solutions</td>
+                    <td>Qualified</td>
+                </tr>
+
+                <tr>
+                    <td>Ravi</td>
+                    <td>Tech Corp</td>
+                    <td>Contacted</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="opportunities">
+        <h2>Opportunities</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Opportunity</th>
+                    <th>Amount</th>
+                    <th>Stage</th>
+                    <th>Probability</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Website Project</td>
+                    <td>₹5,00,000</td>
+                    <td>Proposal</td>
+                    <td>60%</td>
+                </tr>
+
+                <tr>
+                    <td>Cloud Project</td>
+                    <td>₹3,50,000</td>
+                    <td>Negotiation</td>
+                    <td>80%</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="followups">
+        <h2>Follow-Ups</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Date</th>
+                    <th>Subject</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Rahul Kumar</td>
+                    <td>10 Oct 2026</td>
+                    <td>Project Discussion</td>
+                    <td>Planned</td>
+                </tr>
+
+                <tr>
+                    <td>Priya Sharma</td>
+                    <td>12 Oct 2026</td>
+                    <td>Product Demo</td>
+                    <td>Planned</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
